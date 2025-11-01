@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630">
+  <defs>
+    <linearGradient id="ogGradient" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0f172a" />
+      <stop offset="100%" stop-color="#1e293b" />
+    </linearGradient>
+    <linearGradient id="ogAccent" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#4c6ef5" />
+      <stop offset="100%" stop-color="#f76707" />
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="630" fill="url(#ogGradient)" />
+  <circle cx="900" cy="315" r="220" fill="url(#ogAccent)" opacity="0.35" />
+  <text x="120" y="220" font-family="Segoe UI, Arial, sans-serif" font-size="72" font-weight="700" fill="#f8fafc">
+    SlimiGood
+  </text>
+  <text x="120" y="300" font-family="Segoe UI, Arial, sans-serif" font-size="40" font-weight="600" fill="#cbd5f5">
+    28 дней к лёгкости без жёстких диет
+  </text>
+  <rect x="120" y="360" width="420" height="6" rx="3" fill="url(#ogAccent)" />
+  <text x="120" y="430" font-family="Segoe UI, Arial, sans-serif" font-size="28" fill="#e2e8f0">
+    • Минус 3–6 кг без стресса  • Куратор и нутрициолог 24/7
+  </text>
+  <text x="120" y="480" font-family="Segoe UI, Arial, sans-serif" font-size="24" fill="#94a3b8">
+    Первые изменения уже через 7 дней. Бронируйте место сейчас.
+  </text>
+</svg>
