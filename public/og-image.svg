@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#5B21B6" />
+      <stop offset="100%" stop-color="#F97316" />
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="630" fill="url(#bg)" />
+  <text x="120" y="220" font-size="72" fill="#FFFFFF" font-weight="700">SlimiGood</text>
+  <text x="120" y="320" font-size="36" fill="#FFFFFFCC">Натуральный комплекс для мягкого похудения</text>
+  <rect x="120" y="380" width="420" height="90" rx="45" fill="#FFFFFF" opacity="0.9" />
+  <text x="150" y="440" font-size="32" fill="#1F2937" font-weight="600">Скидка 45% и поддержка 24/7</text>
+  <circle cx="860" cy="315" r="220" fill="#FFFFFF22" />
+  <circle cx="860" cy="315" r="160" fill="#FFFFFF44" />
+  <text x="780" y="320" font-size="120" fill="#FFFFFF">-7 кг</text>
+</svg>
