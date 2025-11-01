@@ -1,0 +1,55 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: light;
+}
+
+body {
+  font-family: 'Inter', system-ui, sans-serif;
+  background-color: #ffffff;
+  color: #101828;
+}
+
+.section-title {
+  @apply text-3xl font-semibold tracking-tight text-neutral sm:text-4xl;
+}
+
+.section-subtitle {
+  @apply mt-3 max-w-3xl text-lg text-neutral/80;
+}
+
+.card {
+  @apply rounded-3xl border border-slate-200 bg-white/70 p-8 shadow-soft backdrop-blur transition hover:-translate-y-1 hover:shadow-lg;
+}
+
+.gradient-text {
+  background: linear-gradient(90deg, #7F56D9, #F97316);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.progress-track {
+  @apply h-2 w-full rounded-full bg-slate-200;
+}
+
+.progress-thumb {
+  @apply h-2 rounded-full bg-brand;
+}
+
+.toast-enter {
+  @apply translate-y-2 opacity-0;
+}
+
+.toast-enter-active {
+  @apply translate-y-0 opacity-100 transition-all duration-500;
+}
+
+.toast-exit {
+  @apply opacity-100;
+}
+
+.toast-exit-active {
+  @apply translate-y-2 opacity-0 transition-all duration-300;
+}
