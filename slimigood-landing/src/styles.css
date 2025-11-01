@@ -1,0 +1,46 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: dark;
+}
+
+body {
+  background: #0f172a;
+}
+
+.hero-gradient {
+  background: radial-gradient(circle at top left, rgba(31, 182, 255, 0.25), transparent 55%),
+    radial-gradient(circle at top right, rgba(255, 95, 95, 0.3), transparent 55%);
+}
+
+.toast-enter {
+  animation: toast-in 0.3s ease forwards;
+}
+
+@keyframes toast-in {
+  from {
+    opacity: 0;
+    transform: translateX(50%);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes shimmer {
+  0% {
+    background-position: -200% 0;
+  }
+  100% {
+    background-position: 200% 0;
+  }
+}
+
+.progress-gradient {
+  background: linear-gradient(90deg, #1fb6ff, #a855f7, #ff5f5f);
+  background-size: 200% auto;
+  animation: shimmer 3s linear infinite;
+}
