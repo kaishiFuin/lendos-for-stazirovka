@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630">
+  <defs>
+    <linearGradient id="grad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#6B4EFF" />
+      <stop offset="100%" stop-color="#B4A3FF" />
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="630" fill="url(#grad)" rx="32" />
+  <text x="80" y="180" fill="#F9FAFB" font-size="72" font-family="'Segoe UI', sans-serif" font-weight="700">SlimiGood</text>
+  <text x="80" y="260" fill="#F9FAFB" font-size="38" font-family="'Segoe UI', sans-serif">Комплекс для комфортного снижения веса</text>
+  <text x="80" y="360" fill="#F9FAFB" font-size="30" font-family="'Segoe UI', sans-serif">Первые результаты уже через 7 дней — без стресса для организма</text>
+  <text x="80" y="450" fill="#F9FAFB" font-size="28" font-family="'Segoe UI', sans-serif">Закажите SlimiGood с бесплатной доставкой сегодня</text>
+</svg>
