@@ -1,0 +1,78 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: dark;
+}
+
+body {
+  @apply font-sans bg-slate-950 text-slate-50 antialiased;
+}
+
+a {
+  @apply text-accent hover:text-accent/80 transition-colors;
+}
+
+.section-container {
+  @apply mx-auto w-full max-w-6xl px-4 py-16 lg:px-8;
+}
+
+.card {
+  @apply rounded-3xl border border-white/10 bg-white/5 p-6 shadow-glow backdrop-blur transition hover:-translate-y-1 hover:shadow-xl;
+}
+
+.badge {
+  @apply inline-flex items-center gap-2 rounded-full border border-white/20 bg-white/10 px-4 py-1 text-xs uppercase tracking-wide text-white/80;
+}
+
+.gradient-border {
+  position: relative;
+}
+
+.gradient-border::before {
+  content: '';
+  position: absolute;
+  inset: -1px;
+  border-radius: inherit;
+  background: linear-gradient(135deg, rgba(108, 92, 231, 0.5), rgba(0, 184, 148, 0.5));
+  z-index: -1;
+}
+
+.toast-enter {
+  animation: toast-in 0.4s ease-out forwards;
+}
+
+.toast-exit {
+  animation: toast-out 0.3s ease-in forwards;
+}
+
+@keyframes toast-in {
+  from {
+    opacity: 0;
+    transform: translateY(16px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes toast-out {
+  from {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  to {
+    opacity: 0;
+    transform: translateY(16px);
+  }
+}
+
+.sticky-cta {
+  @apply fixed inset-x-4 bottom-6 z-40 flex items-center justify-between rounded-full bg-primary px-5 py-3 text-sm font-semibold shadow-2xl shadow-primary/40 md:hidden;
+}
+
+.sticky-cta button {
+  @apply rounded-full bg-white px-4 py-2 text-primary transition hover:bg-white/90;
+}
