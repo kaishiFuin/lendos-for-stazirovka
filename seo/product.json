@@ -1,0 +1,22 @@
+{
+  "@context": "https://schema.org",
+  "@type": "Product",
+  "name": "SlimiGood",
+  "description": "Программа естественного снижения веса с поддержкой нутрициолога и гарантией результата",
+  "brand": {
+    "@type": "Brand",
+    "name": "SlimiGood"
+  },
+  "offers": {
+    "@type": "Offer",
+    "priceCurrency": "RUB",
+    "price": "4900",
+    "availability": "https://schema.org/LimitedAvailability",
+    "url": "https://slimigood.example.com"
+  },
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": "4.9",
+    "reviewCount": "7240"
+  }
+}

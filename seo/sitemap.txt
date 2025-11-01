@@ -1,0 +1,2 @@
+https://slimigood.example.com/
+https://slimigood.example.com/seo/product.json

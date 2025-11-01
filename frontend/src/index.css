@@ -1,0 +1,103 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: light;
+}
+
+body {
+  font-family: theme('fontFamily.sans');
+}
+
+.gradient-bg {
+  background: radial-gradient(circle at top left, rgba(108, 92, 231, 0.25), transparent 60%),
+    radial-gradient(circle at bottom right, rgba(253, 121, 168, 0.25), transparent 55%),
+    linear-gradient(135deg, rgba(108, 92, 231, 0.1), rgba(0, 184, 148, 0.1));
+}
+
+.glass-panel {
+  backdrop-filter: blur(16px);
+  background: rgba(255, 255, 255, 0.75);
+  border: 1px solid rgba(255, 255, 255, 0.6);
+}
+
+.badge-svg text {
+  font-weight: 600;
+  letter-spacing: 0.08em;
+}
+
+.spin-wheel {
+  width: 280px;
+  height: 280px;
+  border-radius: 9999px;
+  background: conic-gradient(
+    from 0deg,
+    rgba(108, 92, 231, 0.9) 0deg 60deg,
+    rgba(0, 184, 148, 0.9) 60deg 120deg,
+    rgba(253, 121, 168, 0.9) 120deg 180deg,
+    rgba(255, 234, 167, 0.9) 180deg 240deg,
+    rgba(99, 110, 114, 0.9) 240deg 300deg,
+    rgba(45, 52, 54, 0.9) 300deg 360deg
+  );
+  position: relative;
+  box-shadow: 0 12px 40px rgba(45, 52, 54, 0.2);
+}
+
+.spin-wheel::before {
+  content: '';
+  position: absolute;
+  inset: 18px;
+  border-radius: inherit;
+  background: white;
+  display: grid;
+  place-items: center;
+}
+
+.spin-wheel__labels {
+  position: absolute;
+  inset: 12px;
+  display: grid;
+  place-items: center;
+}
+
+.spin-wheel__labels span {
+  position: absolute;
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: #2d3436;
+  text-transform: uppercase;
+}
+
+.spin-indicator {
+  position: absolute;
+  top: -18px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 0;
+  height: 0;
+  border-left: 12px solid transparent;
+  border-right: 12px solid transparent;
+  border-bottom: 20px solid #fd79a8;
+}
+
+.exit-intent-overlay {
+  background: rgba(45, 52, 54, 0.8);
+}
+
+.timer-digits {
+  font-variant-numeric: tabular-nums;
+}
+
+@keyframes marquee {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+.animate-marquee {
+  animation: marquee 25s linear infinite;
+}
